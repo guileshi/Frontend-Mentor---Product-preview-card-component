@@ -90,10 +90,11 @@
   width: 0;
 }
 .card .content button:hover {
+  transform: scale(0.95);
   background-color: #1a4031;
 }
 .card .content button:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 /* sm */
