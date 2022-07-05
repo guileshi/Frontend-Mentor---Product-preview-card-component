@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Montserrat:wght@500;600&display=swap");
+.card {
+  width: 37.5rem;
+  height: auto;
+  display: flex;
+}
+.card .picture {
+  width: 50%;
+}
+.card .picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.card .content {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 32px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.card .content h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #939499;
+  margin-bottom: 16px;
+}
+.card .content h3 {
+  text-transform: capitalize;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #151924;
+  margin-bottom: 24px;
+}
+.card .content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #7c7d83;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  margin-bottom: 32px;
+}
+.card .content .price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.card .content .price span:nth-child(1) {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #2a6f56;
+}
+.card .content .price span:nth-child(2) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: #939499;
+  text-decoration: line-through;
+  margin-left: 24px;
+}
+.card .content button {
+  padding: 16px;
+  background-color: #2a6f56;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.card .content button span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 8px;
+}
+.card .content button .screenreader {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+.card .content button:hover {
+  background-color: #1a4031;
+}
+.card .content button:active {
+  transform: scale(0.95);
+}
+
+/* sm */
+@media (max-width: 767.98px) {
+  .card {
+    display: block;
+    padding: 16px;
+  }
+  .card .picture {
+    width: 100%;
+    height: 200px;
+  }
+  .card .picture img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: unset;
+  }
+  .card .content {
+    width: 100%;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 12px;
+  }
+}/*# sourceMappingURL=card.css.map */
